@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "serve ./",
-    "build": "echo 'Build completed'"
+    "build": "npx wrangler pages deploy ./",
+    "deploy": "npm run build"
   },
   "devDependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "wrangler": "^3.114.1"
   }
 } 
